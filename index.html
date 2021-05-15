@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">    
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.5.3/dist/css/bootstrap.min.css" integrity="sha384-TX8t27EcRE3e/ihU7zmQxVncDAy5uIKz4rEkgIXeMed4M0jlfIDPvg6uqKI2xXr2" crossorigin="anonymous">
+    <link rel="stylesheet" type="text/css" href="style.css">  
+    <title>HTML FORM</title>  
+</head>
+<body>
+    <div class="layout">
+        <div class ="block">
+        <form id="form1">
+            <div class="row"> 
+                <div class="col">
+                    <input type ="text" class="select" id="firstName" placeholder="firstname" required>
+                </div>
+                <div class="col">
+                    <input type ="text" class="select" id="lastName" placeholder="lastname" required>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div class="col">
+                    <select id="gender"  class="select" required>  Gender
+                        <option value="" selected disabled>Gender</option>
+                        <option value="male">Male</option>
+                        <option value="female">Female</option>
+                        <option value="other">Other</option> </select>                   
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div class="col">
+                <input type="text" class="select" id="state" placeholder="State" required>
+                </div>
+                <div class="col">
+                <input type="text" class="select" id="country" placeholder="Country" required>
+                </div>
+            </div><br>
+
+            <div class="row">
+                <div class="col">
+                    <textarea class="address" id="address" placeholder="Address" required></textarea>
+                </div>
+                <div class="col">
+                    <input type="number" class="select" placeholder="Pincode" id="pincode" required>
+                </div>
+            </div>
+
+            <div class ="row">
+                <div class="col">
+                    <div class="check" aria-required="true">
+                        Choice of Food: &emsp;
+                        <input type="checkbox" class="food" value="Chinese" >
+                        <label>Chinese</label>&emsp;
+                        <input type="checkbox" class="food" value="Indian" >
+                        <label>Indian</label>&emsp; 
+                        <input type="checkbox" class="food" value="Thai" >
+                        <label>Thai</label>&emsp; 
+                        <input type="checkbox" class="food" value="Japanese">
+                        <label>japanese</label>&emsp; 
+                        <input type="checkbox" class="food" value="Mexican" >
+                        <label>Mexican</label>&emsp;
+                    </div>
+                </div>
+            </div>
+            <div class="row bt">
+                <div class="col">
+                     <button class="button" type="submit" onclick="return insert()">Submit</button> <!--call the insert -->
+                </div>
+            </div><br>
+            <hr>
+            <div class="row">
+                <div class="col tab">
+                    <table id="myTable"><!--to create table -->
+                        <tr>
+                            <th>First Name</th>
+                            <th>Last Name</th>
+                            <th>Gender</th>
+                            <th>Choice of Food</th>
+                            <th>Address</th>
+                            <th>State</th>
+                            <th>Country</th>
+                            <th>Pincode</th>
+                        </tr>
+                    </table>
+                </div>
+            </div>
+        </form>
+    </div>
+</div>
+<script src="script.js"></script><!--to link js file-->
+</body>
+</html>
+         
+       
+  
